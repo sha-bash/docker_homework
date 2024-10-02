@@ -1,0 +1,5 @@
+# Используем официальный образ nginx
+FROM nginx:latest
+
+# Копируем ваш пользовательский HTML файл в директорию с статичными файлами nginx
+COPY index.html /usr/share/nginx/html/index.html
